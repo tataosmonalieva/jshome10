@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Countries</h1>
+    <label for="all">All</label>
+    <input type="radio" checked="true" name="type" id="all">
+    <label for="search">Search</label>
+    <input type="radio" name="type" id="search">
+
+    <div class="search-wrapper hidden">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button>Search</button>
+        <div class="country">
+
+        </div>
+        </div>
+    </div>
+
+    <!-- Форма поиска по имени страны -->
+    <div id="search-form">
+        <label for="country-name">Название страны: </label>
+        <input type="text" id="country-name">
+        <button onclick="searchCountry()">Search</button>
+    </div>
+    <!-- Результат поиска -->
+    <div id="country-info">
+        <h2 id="country-name-result"></h2>
+
+        <p>Capital: <span id="capital"></span></p>
+        <p>Currency: <span id="currency"></span></p>
+        <p>Language: <span id="language"></span></p>
+        <div class="flag-container">
+
+        <img id="flag" src="" alt="flags" style="width: 200px">
+        </div>
+        <p>Google maps: <span id="maps"></span></p>
+    </div>
+    <div class="row">
+    </div>
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
