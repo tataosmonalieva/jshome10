@@ -44,14 +44,14 @@ h1 {
     color: darkblue;
 }
 
-#search-form {
+.btn-wrapper {
 
     text-align: center;
     margin-top: 20px;
 
 }
 
-#country-info {
+.box-wrap {
     padding: 20px;
     text-align: center;
     margin-top: 20px;
